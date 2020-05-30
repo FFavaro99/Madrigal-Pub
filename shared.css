@@ -7,7 +7,6 @@
 
 body {
     font-family: 'LibreBaskerville', serif;
-    /* font-family: sans-serif; */
     color: #fff;
     margin: 0;
 }
@@ -55,15 +54,24 @@ body {
 }
 
 .mobile-nav {
-    display: none;
     position: fixed;
     width: 100vw;
     height: 100vh;
-    left: 0;
+    left: -100vw;
     top: 0;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     background: rgba(0, 0, 0, 0.8);
     text-align: center;
+
+    opacity: 0;
+    z-index: -10;
+}
+
+.mobile-nav.open-mobile-nav {
+    opacity: 100;
+    z-index: auto;
+    transform: translateX(100vw);
+    transition: opacity 200ms, transform 200ms;
 }
 
 .mobile-nav__close {

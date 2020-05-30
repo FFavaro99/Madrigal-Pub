@@ -3,11 +3,11 @@ const toggleButton = document.querySelector('.toggle-button');
 const closeButton = document.querySelector('.mobile-nav__close');
 
 function openMobileNav() {
-    mobileNav.style.display = 'block';
+    mobileNav.classList.add('open-mobile-nav');
 }
 
 function closeMobileNav() {
-    mobileNav.style.display = 'none';
+    mobileNav.classList.remove('open-mobile-nav');
 }
 
 
