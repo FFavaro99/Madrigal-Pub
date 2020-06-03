@@ -1,4 +1,8 @@
 
+main {
+    height: calc(70vh - 3rem);
+}
+
 .main__over-title {
     font-size: 2rem;
     text-align: center;
